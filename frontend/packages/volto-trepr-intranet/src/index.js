@@ -1,3 +1,6 @@
+// Views
+import AreaView from './components/Views/AreaView';
+
 const applyConfig = (config) => {
   config.settings = {
     ...config.settings,
@@ -18,6 +21,11 @@ const applyConfig = (config) => {
         ratio: 1,
       },
     ],
+  };
+  // Views
+  config.views.contentTypesViews = {
+    ...config.views.contentTypesViews,
+    Area: AreaView,
   };
   return config;
 };
