@@ -7,7 +7,6 @@ import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
 
 const AreaView = (props) => {
   const { content, location } = props;
-  const { telefone, email } = content;
   const path = getBaseUrl(location?.pathname || '');
 
   return (

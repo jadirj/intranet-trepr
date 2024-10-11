@@ -7,6 +7,7 @@ const ContactInfo = ({ content }) => {
 
   return (
     <Container narrow className="contato">
+      <h2>Contatos:</h2>
       <Container className="telefone">
         <span>Telefone</span>: <span>{telefone}</span>
       </Container>
