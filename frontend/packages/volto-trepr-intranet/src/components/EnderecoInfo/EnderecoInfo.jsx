@@ -18,7 +18,11 @@ const EnderecoInfo = ({ content }) => {
         <span>Cidade</span>: <span>{cidade}</span>
       </Container>
       <Container className="email">
-        <span>Estado</span>: <span>{estado.token}</span>
+        {estado && (
+          <>
+            - <span className="estado">{estado.token}</span>
+          </>
+        )}
       </Container>
       <Container className="email">
         <span>CEP</span>: <span>{cep}</span>
