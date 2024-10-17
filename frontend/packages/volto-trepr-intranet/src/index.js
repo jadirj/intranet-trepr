@@ -3,6 +3,8 @@ import AreaView from './components/Views/AreaView';
 import PessoaView from './components/Views/PessoaView';
 // Blocks
 import AreaGridItem from './components/Blocks/Grid/AreaGridItem';
+/// Listing
+import IconListingTemplate from './components/Blocks/Listing/IconListingTemplate';
 
 const applyConfig = (config) => {
   config.settings = {
@@ -38,6 +40,16 @@ const applyConfig = (config) => {
     component: AreaGridItem,
     dependencies: 'Area',
   });
+  /// Listing
+  //// Listing Variations
+  config.blocks.blocksConfig.listing.variations = [
+    ...config.blocks.blocksConfig.listing.variations,
+    {
+      id: 'icon-template',
+      title: 'Ícones',
+      template: IconListingTemplate,
+    },
+  ];
 
   return config;
 };
